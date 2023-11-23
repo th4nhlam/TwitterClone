@@ -2,9 +2,6 @@
 
 require("DBInfo.inc");
 
-//Call service to register
-//http://localhost/~hussienalrubaye/TwitterAndroidServer/Login.php?email=c@yahoo.com&password=1234567
-
 $query ="select * from login  where email='" . $_GET['email'] ."' and password='" . $_GET['password'] ."'" ;
 $result= mysqli_query($connect,$query);
 

@@ -2,9 +2,6 @@
 
 require("DBInfo.inc");
 
-//Call service to register
-//http://localhost/~hussienalrubaye/TwitterAndroidServer/IsFollowing.php?user_id=1&following_user_id=2
-
 $query ="select * from following  where user_id='" . $_GET['user_id'] ."' and following_user_id='" . $_GET['following_user_id'] ."'" ;
 $result= mysqli_query($connect,$query);
 
