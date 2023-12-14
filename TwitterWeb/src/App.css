@@ -1,0 +1,96 @@
+/* Reset.css */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding and margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default block margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Reset font styles */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  border: solid 1px #eee;
+}
+
+/* Remove the outline on focused elements for accessibility */
+a,
+button,
+input,
+textarea,
+select {
+  outline: none;
+}
+
+/* Remove default border and padding on images */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset form elements to prevent inconsistent styling */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+/* Correct the font size and margin on 'h1' elements within 'section' and 'article' contexts in HTML5 */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
