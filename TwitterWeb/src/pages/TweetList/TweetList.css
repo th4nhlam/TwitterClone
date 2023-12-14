@@ -1,0 +1,98 @@
+.mobile-home-container {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f8fa;
+}
+
+header {
+  background-color: #1da1f2;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.tweet-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.tweet {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.user-info {
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #3498db; /* Twitter blue color */
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a subtle animation to images */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add some responsive styles */
+@media screen and (min-width: 768px) {
+  .tweet-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tweet-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  appearance: none;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}

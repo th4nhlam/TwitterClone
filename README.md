@@ -1,82 +1,100 @@
-# TwitterClone
-# Very Good Blog App - Blog sharing
+# Twitter Project
 
-[![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg)](https://flutter.dev/)
+This project is a Twitter-like social media platform developed with a multi-tier architecture, consisting of a Front-end built with ReactJS, a Mobile application developed with Kotlin, and a Back-end powered by PHP.
 
-![VeryGoodBlogApp Landing](.github/screenshots/landing.png)
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+The Twitter project aims to provide users with a social media platform where they can post tweets, follow other users, and interact with content. The project is divided into three main components: Front-end (ReactJS), Mobile (Kotlin), and Back-end (PHP).
 
 ## Features
 
-- Login, register, log out.
-- Create, read posts
-- Follow other users
+- **Tweet Feed:** Users can view a feed of tweets from themselves and the users they are following.
+- **Tweet Creation:** Users can create and post tweets with text and optional images.
+- **User Profile:** Users have individual profiles showcasing their tweets and personal information.
+- **Mobile Access:** Android mobile application allows users to access the platform on the go.
 
-## Technology used
+## Technologies Used
 
-- Flutter & Dart
+### Front-end (ReactJS)
+
 - ReactJS
-- PHP
+- React Router for navigation
+- React Icons for iconography
+- CSS for styling
 
+### Mobile (Kotlin)
 
-## Setup and run
+- Kotlin programming language
+- Android Studio IDE
+- Retrofit for handling API requests
+- Picasso for image loading
+- Material Design components for UI
 
-<details>
-    <summary>Click to expand</summary>
-    <br>
+### Back-end (PHP)
 
-- Setup and run
-  - Flutter
-    - Install [Flutter](https://flutter.dev/docs/get-started/install).
-    - Using **`stable`** channel:
-      ```bash
-      ❯ flutter channel stable
-      ❯ flutter upgrade
-      ```
-    - Flutter doctor:
-      ```bash
-      ❯ flutter doctor
-      ```
-    - Install all the packages by:
-      ```bash
-      ❯ flutter pub get
-      ```
-    - Run app on real devices or emulator by:
-      ```bash
-      ❯ flutter run
-      ```
-      or debug mode in VSCode or some IDEs
+- PHP for server-side scripting
+- MySQL for database management
+- RESTful API for communication between the Front-end/Mobile and the Back-end
+- CORS headers for handling cross-origin requests
 
-</details>
+## Folder Structure
 
-## Screenshots
+- **front-end:** TwitterWeb.
+- **mobile:** TwitterKotlin.
+- **back-end:** TwitterAndroidServer.
+- **database:** DBScript.sql.
 
-|                                       |                                        |                                         |
-| :-----------------------------------: | :------------------------------------: | :-------------------------------------: |
-|             Login                     |                Homepage                |               Personal info              |
-|  ![](./ui/login.png)                  |   ![](./ui/homepage.png)   |  ![](./ui/personal_info.png)  |
+## Getting Started
 
+1. **Clone the Repository:**
 
-## Todo
+   ```bash
+   git clone https://github.com/th4nhlam/TwitterClone/
+   cd TwitterClone
+   ```
 
-- FCM to push notifications.
+2. **Setup Database:**
 
-## Contributors✨
+   - Execute the SQL scripts in the DBScript.sql to set up the required database and tables.
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center">
-        <img src="https://avatars.githubusercontent.com/u/90228013?v=4" width="100px;" alt=""/><br /><sub><b>Pham Tran Thanh Lam</b></sub></a><br />
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/96125671?v=4" width="100px;" alt=""/><br /><sub><b>Ngo Hong Hoang</b></sub></a><br />
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/100055407?v=4" width="100px;" alt=""/><br /><sub><b>Nguyen Thi Lan Anh</b></sub></a><br />
-    <td align="center"><img src="https://avatars.githubusercontent.com/u/61832021?v=4" width="100px;" alt=""/><br /><sub><b>Nguyen Thanh Liem</b></sub></a><br />
-  </tr>
-  
-</table>
+3. **Front-end Setup:**
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+   ```bash
+   cd front-end
+   npm install
+   npm run dev
+   ```
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+4. **Mobile Setup:**
+
+   - Open the `mobile` project in Android Studio.
+   - Ensure you have the necessary dependencies installed.
+   - Run the application on an emulator or a physical Android device.
+
+5. **Back-end Setup:**
+
+   - Configure the PHP server to host the Back-end.
+   - Update the database connection details in the Back-end code.
+
+6. **Access the Application:**
+
+   - Open the Front-end in a web browser (http://localhost:5173 by default).
+   - Launch the mobile application on an Android device.
+
+## Contributing
+
+Feel free to contribute to the development of this project by submitting pull requests or reporting issues.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

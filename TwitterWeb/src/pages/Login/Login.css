@@ -1,0 +1,80 @@
+/* MobileLoginForm.css */
+
+.mobile-login-container {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 360px;
+  margin: auto;
+  gap: 22px;
+}
+
+.mobile-login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-login-form h2 {
+  text-align: center;
+  color: #1da1f2;
+}
+
+.mobile-login-form label {
+  margin: 10px 0;
+}
+
+.mobile-login-form input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mobile-login-form button {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.mobile-login-form button:hover {
+  background-color: #0d91e5;
+}
+
+.mobile-login-form button:hover {
+  background-color: #0d91e5;
+}
+
+.mobile-login-container .signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mobile-login-container .signup-link a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.mobile-login-container .signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 768px) {
+  .mobile-login-form {
+    width: 100%;
+  }
+}
