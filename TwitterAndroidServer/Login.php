@@ -1,5 +1,14 @@
 <?php
 
+// Allow requests from any origin
+header("Access-Control-Allow-Origin: *");
+
+// Allow the content type to be sent with the request
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Allow GET requests
+header("Access-Control-Allow-Methods: GET");
+
 require("DBInfo.inc");
 
 $query ="select * from login  where email='" . $_GET['email'] ."' and password='" . $_GET['password'] ."'" ;
