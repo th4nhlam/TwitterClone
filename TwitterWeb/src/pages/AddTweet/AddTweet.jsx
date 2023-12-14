@@ -14,7 +14,7 @@ const AddTweet = () => {
   const handleAddTweet = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/TwitterAndroidServer/TweetAdd.php?user_id=${user.user_id}&tweet_text=${encodeURIComponent(
+        `http://localhost:8080/TwitterWebServer/TweetAdd.php?user_id=${user.user_id}&tweet_text=${encodeURIComponent(
           tweetText
         )}&tweet_picture=${encodeURIComponent(tweetPicture)}`
       );

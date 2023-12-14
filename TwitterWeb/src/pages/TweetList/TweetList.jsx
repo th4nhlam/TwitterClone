@@ -21,7 +21,7 @@ const TweetList = () => {
   const fetchTweets = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/TwitterAndroidServer/TweetList.php?op=${showAllTweets ? 1 : 2}&user_id=${user.user_id}&StartFrom=0`
+        `http://localhost:8080/TwitterWebServer/TweetList.php?op=${showAllTweets ? 1 : 2}&user_id=${user.user_id}&StartFrom=0`
       );
 
       if (response.ok) {

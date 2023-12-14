@@ -21,7 +21,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:8080/TwitterAndroidServer/Login.php?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`,
+        `http://localhost:8080/TwitterWebServer/Login.php?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`,
         {
           method: "GET",
           headers: {

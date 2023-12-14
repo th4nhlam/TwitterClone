@@ -15,7 +15,7 @@ const Register = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/TwitterAndroidServer/Register.php?first_name=${encodeURIComponent(fullName)}&email=${encodeURIComponent(
+        `http://localhost:8080/TwitterWebServer/Register.php?first_name=${encodeURIComponent(fullName)}&email=${encodeURIComponent(
           email
         )}&password=${encodeURIComponent(password)}&picture_path=${encodeURIComponent(picturePath)}`,
         {
