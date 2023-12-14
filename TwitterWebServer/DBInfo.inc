@@ -1,8 +1,9 @@
+
 <?php
 
 $host="127.0.0.1";
 $user ="root";
-$password="nacuni";
+$password="";
 $database ="twitter";
 
 $connect = mysqli_connect($host, $user,$password,$database);
