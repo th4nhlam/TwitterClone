@@ -29,7 +29,6 @@ The Twitter project aims to provide users with a social media platform where the
 
 - ReactJS
 - React Router for navigation
-- Axios for API requests
 - React Icons for iconography
 - CSS for styling
 
@@ -50,30 +49,30 @@ The Twitter project aims to provide users with a social media platform where the
 
 ## Folder Structure
 
-- **front-end:** Contains the ReactJS Front-end code.
-- **mobile:** Includes the Kotlin-based Android mobile application code.
-- **back-end:** Contains the PHP Back-end code.
-- **database:** SQL scripts for database setup and management.
+- **front-end:** TwitterWeb.
+- **mobile:** TwitterKotlin.
+- **back-end:** TwitterAndroidServer.
+- **database:** DBScript.sql.
 
 ## Getting Started
 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/twitter-project.git
-   cd twitter-project
+   git clone https://github.com/th4nhlam/TwitterClone/
+   cd TwitterClone
    ```
 
 2. **Setup Database:**
 
-   - Execute the SQL scripts in the `database` folder to set up the required database and tables.
+   - Execute the SQL scripts in the DBScript.sql to set up the required database and tables.
 
 3. **Front-end Setup:**
 
    ```bash
    cd front-end
    npm install
-   npm start
+   npm run dev
    ```
 
 4. **Mobile Setup:**
@@ -89,7 +88,7 @@ The Twitter project aims to provide users with a social media platform where the
 
 6. **Access the Application:**
 
-   - Open the Front-end in a web browser (http://localhost:3000 by default).
+   - Open the Front-end in a web browser (http://localhost:5173 by default).
    - Launch the mobile application on an Android device.
 
 ## Contributing

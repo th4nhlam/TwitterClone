@@ -27,10 +27,17 @@ main {
 }
 
 .tweet {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .user-info {
@@ -39,11 +46,24 @@ main {
 
 .username {
   font-weight: bold;
+  color: #3498db; /* Twitter blue color */
 }
 
-.tweet img {
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a subtle animation to images */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Add some responsive styles */
